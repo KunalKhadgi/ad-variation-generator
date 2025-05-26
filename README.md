@@ -1,14 +1,14 @@
-Replace its contents with the following comprehensive README:
-
-md
-
 # Ad Variation Generator
 
 **A** simple AI-powered web app that generates image & video ads, supports A/B testing, customization and analytics.
 
 ## _Setup Instructions_
 
-1. **Fork & clone** this repo (see Submission Guidelines).
+1. Create venv using cmd
+   ` python -m venv name-venv`
+
+   - Activate the venv in terminal and install the requirements.txt in _backend/requirements.txt_
+
 2. Copy `.env.example` to `.env` and set:
    REPLICATE_API_TOKEN=<your_token>
 
@@ -22,7 +22,7 @@ Frontend → http://localhost:3000
 
 Backend API → http://localhost:5000
 
-🏗  *Architecture Explanation*
+🏗  *_*Architecture Explanation*_*
 Backend
 
 Flask app exposing REST endpoints:
@@ -49,7 +49,7 @@ Containerization
 
 Two Dockerfiles (backend & frontend) and a docker-compose.yml to tie them together.
 
-🖼 *Model Selection Justification**
+🖼 *_*Model Selection Justification*_*
 Images → stability-ai/stable-diffusion v1.5
 
 Photorealistic, fast inference, well-supported on Replicate.
