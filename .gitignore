@@ -1,2 +1,32 @@
-./venv
-./dotenv
+# === Python virtualenvs ===
+venv/
+.env              # common name for env file
+dotenv            # if you named yours “dotenv”
+
+# === Python artifacts ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Logs & databases ===
+*.log
+*.sqlite3
+preferences.db    # your SQLite file
+
+# === Node & React builds ===
+frontend/node_modules/
+frontend/build/
+
+# === Docker ===
+docker-compose.override.yml
+
+# === Mac / OS files ===
+.DS_Store
+
+# === IDEs & editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
